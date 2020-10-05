@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "store": "^2.0.12",
     "vue": "^2.6.11",
     "vue-router": "^3.4.5",
     "vuetify": "^2.3.12"
