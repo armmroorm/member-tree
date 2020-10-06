@@ -15,8 +15,15 @@
 </template>
 
 <script>
+import PostService from "../services/BaseServicec";
+const postService = new PostService();
 export default {
   name: "treeview",
+  created() {
+    postService.getAllTree().then((res) => {
+      this.treeData = res.data.data;
+    });
+  },
   data() {
     return {
       treeData: {
